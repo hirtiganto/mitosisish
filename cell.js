@@ -1,6 +1,6 @@
 function Cell(loc, d) {
-  this.location = createVector(width/2,height/2) || loc
-  this.diameter = height || d
+  this.location = loc || createVector(width/2,height/2)
+  this.diameter = d || height
 
   this.color = {
     r: random(50, 230),
